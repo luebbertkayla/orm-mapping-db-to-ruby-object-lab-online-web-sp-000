@@ -4,7 +4,9 @@ class Student
   def self.new_from_db(row)
     # create a new Student object given a row from the database
     sql = <<-SQL
-      
+      SELECT * 
+      FROM students 
+      SQL
   end
 
   def self.all
